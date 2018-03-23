@@ -1,0 +1,11 @@
+[user]
+	name = Michal Iwanczuk
+	email = michal.iwanczuk@schange.com
+[core]
+	editor = subl -n -w
+[alias]
+	ch = checkout
+	st = status
+	cm = commit
+	lg = log
+	br = branch
