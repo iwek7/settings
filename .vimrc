@@ -1,3 +1,6 @@
+:colorscheme pablo
+
+
 " copying stuff to clipboard
 set clipboard=unnamedplus
 set mouse=a
@@ -22,6 +25,10 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" this one makes matching paranhesis highlight better on weirdly colored
+" paranthesis
+:hi! MatchParen cterm=NONE,bold gui=NONE,bold  guibg=#eee8d5 guifg=NONE
 
 " plugin manager 
 call plug#begin('~/.vim/plugged')
