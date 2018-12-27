@@ -1,11 +1,10 @@
 [user]
-	name = Michal Iwanczuk
-	email = michal.iwanczuk@schange.com
-[core]
-	editor = subl -n -w
+	name = miwanczuk
+	email = miwanczuk@empik.com
 [alias]
-	ch = checkout
 	st = status
-	cm = commit
-	lg = log
 	br = branch
+	cm = commit -m
+	cp = cherry-pick
+	ch = checkout
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
