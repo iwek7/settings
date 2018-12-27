@@ -12,7 +12,7 @@ set number
 
 " display spaces
 :set list
-:set listchars+=space:·
+:set listchars=space:·
 :hi SpecialKey ctermfg=240 guifg=gray
 
 filetype plugin indent on
