@@ -1,6 +1,5 @@
 :colorscheme pablo
 
-
 " copying stuff to clipboard
 set clipboard=unnamedplus
 set mouse=a
@@ -29,6 +28,8 @@ set expandtab
 " this one makes matching paranhesis highlight better on weirdly colored
 " paranthesis
 :hi! MatchParen cterm=NONE,bold gui=NONE,bold  guibg=#eee8d5 guifg=NONE
+
+:hi Cursor cterm=reverse gui=reverse
 
 " plugin manager 
 call plug#begin('~/.vim/plugged')
