@@ -42,3 +42,5 @@ alias del='rm -i'
 
 alias h='history'
 alias hh='history | cut -c 8-'
+
+alias logdaemon='journalctl -f -n 1000 -u'
