@@ -42,5 +42,13 @@ alias del='rm -i'
 
 alias h='history'
 alias hh='history | cut -c 8-'
-
+alias ls='ls --color'
 alias logdaemon='journalctl -f -n 1000 -u'
+
+
+
+export PS1="\e[0;33m[\$PWD]\e[m\n\e[1;32m\A \$\e[m "
+
+GIT_PROMPT_ONLY_IN_REPO=1
+GIT_PROMPT_THEME=IweksTheme
+source ~/.bash-git-prompt/gitprompt.sh

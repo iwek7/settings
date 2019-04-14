@@ -32,14 +32,15 @@ set expandtab
 :hi Cursor cterm=reverse gui=reverse
 
 " plugin manager 
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
-Plug 'https://github.com/kien/rainbow_parentheses.vim'
+" Plug 'https://github.com/kien/rainbow_parentheses.vim'
 
-call plug#end()
+" call plug#end()
 
 " rainbow parentheses config
-" au VimEnter * RainbowParenthesesToggle
-" au Syntax * RainbowParenthesesLoadRound
-" au Syntax * RainbowParenthesesLoadSquare
-" au Syntax * RainbowParenthesesLoadBraces
+
+"au VimEnter * RainbowParenthesesToggle
+"au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
