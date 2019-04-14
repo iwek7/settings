@@ -1,6 +1,7 @@
 [user]
-	name = miwanczuk
-	email = miwanczuk7@gmail.com
+  name = miwanczuk
+  # configure this in bashrc - env specific
+  # email = michal.iwanczuk@empik.com
 [alias]
 	st = status
 	br = branch
@@ -8,5 +9,6 @@
 	cp = cherry-pick
 	ch = checkout
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-[core]
-	editor = vim
+  pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
+  [core]
+  editor = vim
