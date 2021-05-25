@@ -51,3 +51,16 @@ git config --global user.email "miwanczuk7@gmail.com"
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=IweksTheme
 source ~/.bash-git-prompt/gitprompt.sh
+
+function proot {
+    if ! git tag > /dev/null 2>&1 && [ $? -eq 0 ]; then
+        echo "Not a git repo";
+        exit
+    fi
+
+    root=$(git rev-parse --show-toplevel)
+
+    cd $root
+    $SHELL
+}
+
