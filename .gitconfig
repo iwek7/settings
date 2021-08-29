@@ -1,5 +1,6 @@
 [user]
-  name = miwanczuk
+	name = iwek
+	email = miwanczuk7@gmail.com
   # configure this in bashrc - env specific
   # email = michal.iwanczuk@empik.com
 [alias]
@@ -9,6 +10,7 @@
 	cp = cherry-pick
 	ch = checkout
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	commitsAtDate = "!f() { git log --pretty='format:%C(yellow)%h %G? %ad%Cred%d %Creset%s%C(cyan) [%cn]' --decorate --after=\"$1 0:00\" --before=\"$1 23:59\" --author \"`git config user.name`\"; }; f" # usage git commitsAtDate 2017-08-18
   pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
   [core]
   editor = vim
