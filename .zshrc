@@ -24,7 +24,7 @@ export PS1="\[\e[0;33m\][\$PWD]\[\e[m\]\n\[\e[1;32m\]\A \$\[\e[m\]"
 LS_COLORS=$LS_COLORS:'ow=1;34:tw=1;34:' ; export LS_COLORS
 
 # for mac os
-# export PS1='%{$fg_bold[yellow]%}[$PWD]%{$reset_color%}%{$fg_bold[green]%}%T %{$reset_color%}$'
+# export PS1=""%F{yellow}[$PWD]%f%F{green}%T %f$ "
 # export LSCOLORS=gxfxcxdxbxegedabagacad'
 
 
